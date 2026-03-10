@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denise Mattos | Musa do Samba Carioca</title>
+    <meta name="description" content="Denise Mattos, a musa do samba carioca. Contrate shows, ouça os sucessos e acompanhe a agenda oficial da cantora.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://denisemattos.com.br/">
+    <meta property="og:title" content="Denise Mattos | Musa do Samba Carioca">
+    <meta property="og:description" content="Denise Mattos, a musa do samba carioca. Contrate shows, ouça os sucessos e acompanhe a agenda oficial da cantora.">
+    <meta property="og:image" content="https://scassessoriadeimprensa.com.br/wp-content/uploads/2020/07/Denise-Mattos-sambista-Rio-de-Janeiro.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://denisemattos.com.br/">
+    <meta property="twitter:title" content="Denise Mattos | Musa do Samba Carioca">
+    <meta property="twitter:description" content="Denise Mattos, a musa do samba carioca. Contrate shows, ouça os sucessos e acompanhe a agenda oficial da cantora.">
+    <meta property="twitter:image" content="https://scassessoriadeimprensa.com.br/wp-content/uploads/2020/07/Denise-Mattos-sambista-Rio-de-Janeiro.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23dc2626%22/><text y=%2250%22 x=%2250%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2260%22 fill=%22white%22 font-weight=%22bold%22>D</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#dc2626',
+                        dark: '#050505',
+                        surface: '#121212'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .glass {
+            background: rgba(18, 18, 18, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .text-shadow {
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+        }
+        /* Marquee Animation */
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+        }
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .gsap-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand selection:text-white">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300" id="header">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-display text-xl md:text-2xl font-bold tracking-wider text-white">DENISE MATTOS<span class="text-brand">.</span></a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium tracking-wide uppercase text-gray-300">
+                <a href="#sobre" class="hover:text-brand transition-colors">Sobre</a>
+                <a href="#lancamento" class="hover:text-brand transition-colors">Música</a>
+                <a href="#diferenciais" class="hover:text-brand transition-colors">Diferenciais</a>
+            </nav>
+            <a href="https://wa.me/5521983759960" target="_blank" class="bg-brand hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 shadow-[0_0_15px_rgba(220,38,38,0.4)]">
+                Contratar Show
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://yt3.googleusercontent.com/KmeQ-6mst7U269eZXnpQnN3223nYJcdnVVUY55rcm6k_lZW5T6YnrphOVfpIPhkZl6BE5Zm7uQ=s900-c-k-c0x00ffffff-no-rj" alt="Denise Mattos" class="w-full h-full object-cover object-top opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-dark via-transparent to-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-20">
+            <p class="hero-text text-brand font-semibold tracking-[0.2em] uppercase text-sm md:text-base mb-4">A Musa do Samba Carioca</p>
+            <h1 class="hero-text font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 text-shadow">
+                A Alma do <br/><span class="italic text-brand">Samba</span> em Cena
+            </h1>
+            <p class="hero-text text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light">
+                Tradição, voz marcante e presença de palco inesquecível. Leve a verdadeira essência da música popular brasileira para o seu evento.
+            </p>
+            <div class="hero-text flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5521983759960" target="_blank" class="bg-brand text-white px-8 py-4 rounded-full font-semibold text-lg transition-all hover:bg-red-700 hover:scale-105 shadow-[0_0_30px_rgba(220,38,38,0.5)] flex items-center gap-2">
+                    Reservar Data
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                </a>
+                <a href="#lancamento" class="px-8 py-4 rounded-full font-semibold text-lg text-white border border-white/20 hover:bg-white/10 transition-all">
+                    Ouvir Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee / Autoridade -->
+    <section class="py-10 border-y border-white/5 bg-surface/30">
+        <div class="marquee-container">
+            <div class="marquee-content flex gap-16 items-center text-xl md:text-2xl font-display italic text-gray-400">
+                <span>+75k Seguidores</span>
+                <span class="text-brand">•</span>
+                <span>+60 mil Streams</span>
+                <span class="text-brand">•</span>
+                <span>Abertura de shows: Belo, Alexandre Pires, Jorge Aragão</span>
+                <span class="text-brand">•</span>
+                <span>Mocidade Independente de Padre Miguel</span>
+                <span class="text-brand">•</span>
+                <!-- Duplicate for infinite loop -->
+                <span>+75k Seguidores</span>
+                <span class="text-brand">•</span>
+                <span>+60 mil Streams</span>
+                <span class="text-brand">•</span>
+                <span>Abertura de shows: Belo, Alexandre Pires, Jorge Aragão</span>
+                <span class="text-brand">•</span>
+                <span>Mocidade Independente de Padre Miguel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lançamento Recente -->
+    <section id="lancamento" class="py-16 md:py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 gsap-reveal">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Último <span class="text-brand italic">Lançamento</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Assista ao videoclipe mais recente e sinta a energia que Denise Mattos entrega em cada nota.</p>
+        </div>
+        <div class="relative w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 gsap-reveal">
+            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/G6tQk9135xM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-16 md:py-32 px-6 bg-surface/50 relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative gsap-reveal">
+                <div class="absolute -inset-4 border border-brand/30 rounded-2xl transform translate-x-4 translate-y-4"></div>
+                <img src="https://scassessoriadeimprensa.com.br/wp-content/uploads/2020/07/Denise-Mattos-sambista-Rio-de-Janeiro.jpeg" alt="Denise Mattos Cantando" class="relative rounded-2xl w-full object-cover aspect-[3/4] shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+            </div>
+            <div class="gsap-reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Uma Vida Dedicada à <span class="text-brand italic">Música Brasileira</span></h2>
+                <div class="space-y-6 text-gray-300 leading-relaxed text-lg font-light">
+                    <p>De Valença, Rio de Janeiro, Denise é a verdadeira musa do samba carioca. Vinda de uma família de músicos e sobrinha de grandes compositores, como Pereira Mattos (parceiro de Zé Ketti na clássica "Máscara Negra"), a paixão pela cultura nacional corre em suas veias.</p>
+                    <p>Após encantar as noites cariocas cantando MPB, foi no samba que encontrou sua verdadeira voz e propósito. Sua trajetória brilhante inclui apresentações marcantes em concursos, rádio, televisão e na icônica Escola de Samba Mocidade Independente de Padre Miguel.</p>
+                    <p>Com uma presença de palco magnética, Denise já teve a honra de abrir shows para gigantes da música como Belo, Alexandre Pires, Jorge Aragão e Arlindo Cruz.</p>
+                </div>
+                <div class="mt-10 flex gap-4 flex-wrap">
+                    <a href="https://open.spotify.com/intl-pt/artist/2QEQOHKpsNOXBmkK3YoB1C" target="_blank" class="glass px-6 py-3 rounded-full flex items-center gap-2 hover:bg-white/10 transition-colors">
+                        <svg class="w-6 h-6 text-[#1DB954]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.84.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15.001 10.62 18.66 12.9c.42.24.6.84.301 1.14zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.6.18-1.2.72-1.38 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                        Spotify
+                    </a>
+                    <a href="https://www.youtube.com/@denisemattosoficial" target="_blank" class="glass px-6 py-3 rounded-full flex items-center gap-2 hover:bg-white/10 transition-colors">
+                        <svg class="w-6 h-6 text-[#FF0000]" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        YouTube
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais (Bento Grid) -->
+    <section id="diferenciais" class="py-16 md:py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16 gsap-reveal">
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Por que contratar <span class="text-brand italic">Denise Mattos?</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Excelência musical e profissionalismo para garantir o sucesso do seu evento.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto md:auto-rows-[250px]">
+            <!-- Card 1 -->
+            <div class="glass p-8 rounded-3xl md:col-span-2 flex flex-col justify-end relative overflow-hidden group gsap-reveal min-h-[250px]">
+                <div class="absolute inset-0 bg-gradient-to-t from-dark to-transparent z-10"></div>
+                <!-- Abstract background element -->
+                <div class="absolute -right-20 -top-20 w-64 h-64 bg-brand/20 rounded-full blur-3xl group-hover:bg-brand/30 transition-all duration-500"></div>
+                <div class="relative z-20">
+                    <h3 class="font-display text-2xl font-bold mb-2">Repertório Consagrado</h3>
+                    <p class="text-gray-400 font-light max-w-md">Do samba raiz à MPB, um setlist cuidadosamente selecionado para emocionar e animar o público do início ao fim.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass p-8 rounded-3xl flex flex-col justify-end relative overflow-hidden group gsap-reveal min-h-[250px]">
+                <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-brand/20 rounded-full blur-2xl group-hover:bg-brand/30 transition-all duration-500"></div>
+                <div class="relative z-20">
+                    <h3 class="font-display text-4xl font-bold mb-2 text-brand">75k+</h3>
+                    <p class="text-gray-400 font-light">Seguidores fiéis acompanhando sua trajetória nas redes sociais.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass p-8 rounded-3xl flex flex-col justify-end relative overflow-hidden group gsap-reveal min-h-[250px]">
+                <div class="relative z-20">
+                    <h3 class="font-display text-4xl font-bold mb-2 text-brand">60k+</h3>
+                    <p class="text-gray-400 font-light">Streams nas plataformas digitais, provando o alcance de sua voz.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="glass p-8 rounded-3xl md:col-span-2 flex flex-col justify-end relative overflow-hidden group gsap-reveal min-h-[250px]">
+                <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-dark via-dark/80 to-transparent z-10"></div>
+                <div class="relative z-20">
+                    <h3 class="font-display text-2xl font-bold mb-2">Experiência de Palco</h3>
+                    <p class="text-gray-400 font-light max-w-md">Abertura de shows para ícones como Jorge Aragão e Alexandre Pires, garantindo uma performance de alto nível.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos / Prova Social -->
+    <section class="py-16 md:py-32 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 gsap-reveal">
+                <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">O que <span class="text-brand italic">Dizem</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">A recepção do público e de contratantes por onde Denise passa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-2xl gsap-reveal">
+                    <div class="flex text-brand mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 font-light italic mb-6">"A energia que a Denise traz para o palco é surreal. O público cantou do início ao fim. Com certeza voltaremos a contratar!"</p>
+                    <p class="font-bold text-sm uppercase tracking-wider">Produtor de Eventos</p>
+                    <p class="text-xs text-gray-500">Rio de Janeiro, RJ</p>
+                </div>
+                <div class="glass p-8 rounded-2xl gsap-reveal">
+                    <div class="flex text-brand mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 font-light italic mb-6">"Uma voz potente e uma simpatia ímpar. O show da Denise foi o ponto alto da nossa noite de samba."</p>
+                    <p class="font-bold text-sm uppercase tracking-wider">Casa de Shows</p>
+                    <p class="text-xs text-gray-500">São Paulo, SP</p>
+                </div>
+                <div class="glass p-8 rounded-2xl gsap-reveal">
+                    <div class="flex text-brand mb-4">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-300 font-light italic mb-6">"Profissionalismo desde o primeiro contato até o fim da apresentação. Repertório impecável que agradou a todos."</p>
+                    <p class="font-bold text-sm uppercase tracking-wider">Contratante Corporativo</p>
+                    <p class="text-xs text-gray-500">Belo Horizonte, MG</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-16 md:py-32 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-brand/10"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand/20 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10 gsap-reveal">
+            <h2 class="font-display text-5xl md:text-7xl font-bold mb-6">Leve o Melhor do <span class="italic text-brand">Samba</span> para seu Evento</h2>
+            <p class="text-xl text-gray-300 font-light mb-10 max-w-2xl mx-auto">Agenda aberta para shows corporativos, casas de espetáculos e eventos privados.</p>
+            <a href="https://wa.me/5521983759960" target="_blank" class="inline-block bg-brand text-white px-10 py-5 rounded-full font-bold text-xl transition-all hover:bg-red-700 hover:scale-105 shadow-[0_0_40px_rgba(220,38,38,0.6)]">
+                Falar com a Produção
+            </a>
+            <p class="mt-6 text-gray-400 text-sm">WhatsApp: (21) 98375-9960</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-white/10 bg-dark text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-display text-2xl font-bold tracking-wider text-white">DENISE MATTOS<span class="text-brand">.</span></div>
+            <div class="flex gap-6">
+                <a href="https://www.instagram.com/denisemattoscantora/" target="_blank" class="text-gray-400 hover:text-brand transition-colors">Instagram</a>
+                <a href="https://www.youtube.com/@denisemattosoficial" target="_blank" class="text-gray-400 hover:text-brand transition-colors">YouTube</a>
+                <a href="https://open.spotify.com/intl-pt/artist/2QEQOHKpsNOXBmkK3YoB1C" target="_blank" class="text-gray-400 hover:text-brand transition-colors">Spotify</a>
+            </div>
+            <div class="text-sm text-gray-500">
+                &copy; 2026 - Denise Mattos. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        // Register ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Header Background on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-dark/80');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-dark/80');
+                header.classList.add('bg-transparent');
+            }
+        });
+
+        // Hero Animation
+        const tl = gsap.timeline();
+        tl.from(".hero-text", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power3.out",
+            delay: 0.2
+        });
+
+        // Scroll Reveal Animation
+        gsap.utils.toArray('.gsap-reveal').forEach(element => {
+            gsap.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power3.out"
+            });
+        });
+    </script>
+</body>
+</html>
